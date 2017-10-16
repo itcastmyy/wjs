@@ -1,0 +1,116 @@
+*{margin:0;padding:0;}
+
+/*
+ 公共字体样式
+ */
+@font-face{
+	font-family:"fontf";
+	src:url('../font/MiFie-Web-Font.eot') format('embedded-opentype'),
+	    url('../font/MiFie-Web-Font.svg') format('svg'),
+		url('../font/MiFie-Web-Font.ttf') format('truetype'),
+		url('../font/MiFie-Web-Font.woff') format('woff');
+
+}
+[class^='icon-'],[class*=" icon-"]{
+	font-family:fontf;
+}
+
+.icon-logo::before {
+  content: "\e93e";
+}
+
+.icon-icon::before {
+  content: "\e920";
+}
+
+
+.navbar .icon-icon{
+	font-size: 50px;
+    color: #E92322;
+    line-height: 50px;
+    vertical-align:middle;
+}
+
+.navbar .icon-logo{
+	font-size: 32px;
+    color: #777;
+    line-height: 50px;
+    vertical-align:middle;
+
+}
+
+
+body{
+	font-family:"Microsoft Yahei"
+}
+
+#header .topbar{
+	width:100%;
+	height:40px;
+	border-bottom:1px solid #ccc;
+	color:#777;
+}
+
+#header .topbar .row a{
+	color:#777;
+	text-decoration:none;
+	cursor:pointer;
+	position:relative;
+	
+}
+
+#header .topbar .row a img{
+	display:none;
+}
+
+
+
+#header .topbar .row a:hover img{
+	display:block;
+	position:absolute;
+	left:50%;
+	margin-left:-60px;
+	z-index: 1001;
+}
+
+#header .topbar .row >div{
+	height:40px;
+	line-height:40px;
+	text-align:center;
+}
+
+#header .topbar .row >div +div{
+	border-left:1px solid #ccc;
+}
+
+#header .topbar .row .btn{
+	color:#fff;
+	margin-top:-5px;
+	padding:4px 8px;
+
+}
+
+#login{
+    margin-left:10px;
+}
+
+.navbar{
+	height:80px;
+	border-bottom: 1px solid #ccc;
+}
+
+.navbar-nav > li > a{
+	line-height:47px;
+	border-bottom: 2px solid #fff;
+}
+
+.navbar-nav > li > a:hover{
+	border-color:#E92322;
+	background-color: red;
+	
+}
+
+.navbar-nav > .active >a{
+	border-color: #e92322;
+}
+
