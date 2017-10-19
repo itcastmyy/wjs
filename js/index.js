@@ -36,6 +36,16 @@ $(function(){
   ul.css('width',width).parent().css('overflow-x','scroll');
   	
   }
+  
+  
+  //新闻部分
+  
+  var newsTitle = $('.news_title'); 
 
+  $('#news .nav li a').on('click',function(){
+     var $this = $(this);
+     var title = $this.data('title');
+     newsTitle.text(title);
+  })
 
 }) 

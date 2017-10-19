@@ -37,14 +37,14 @@
 			  </div>
 			  <div class="col-md-3">
                 <a class="btn btn-danger" href="#">免费注册</a>
-                <a href="#" id="login" >登录</a>
+                <a href="#" id="login"  data-toggle="modal" data-target="#myModal">登录</a>
 			  </div>
 			</div>  
           </div>
         </div>
 
 
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-default navbar-static-top" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
          <div class="container">
             
             <div class="navbar-header">	
@@ -242,7 +242,7 @@
 		    <li role="presentation"><a href="#tab_5" aria-controls="tab_5" role="tab" data-toggle="tab">微增利</a></li>
 		    <li role="presentation"><a href="#tab_6" aria-controls="tab_6" role="tab" data-toggle="tab">微金宝</a></li>
 		    <li role="presentation"><a href="#tab_7" aria-controls="tab_7" role="tab" data-toggle="tab">微转让</a></li>
-		    <li class="pull-right hidden-xs"><a href="#">更多</a></li>
+		    <li class="pull-right hidden-sm hidden-xs"><a href="#">更多</a></li>
 		  </ul>
          </div>
            
@@ -418,8 +418,128 @@
 
 
      <!--新闻区域--> 
-     <section></section>
+         <section id="news">
+        <div class="container">
+          <div class="row">
+			  <div class="col-md-3 col-md-offset-2">
+                <div class="news_title">全部新闻</div>
+			  </div>
+
+			  <div class="col-md-1">
+                <ul class="nav nav-pills nav-stacked">
+				  <li role="presentation" class="active"><a href="#new1" role="tab" data-toggle="tab" 
+				  data-title = "全部新闻">
+				   <i class="icon-news01"></i> </a></li>
+
+				  <li role="presentation"><a href="#new2" role="tab" data-toggle="tab"
+				  data-title = "媒体新闻" >
+				  <i class="icon-news02"></i> </a></li>
+
+				  <li role="presentation"><a href="#new3" role="tab" data-toggle="tab" 
+				  data-title = "行业新闻">
+				  <i class="icon-news03"></i> </a></li>
+
+				  <li role="presentation"><a href="#new4" role="tab" data-toggle="tab"
+				   data-title = "独家新闻" >
+				  <i class="icon-news04"></i> </a></li>
+				</ul>
+			  </div>
+
+			  <div class="col-md-5">
+		        <div class="tab-content">
+				    <div role="tabpanel" class="tab-pane active" id="new1">
+				     <ul>
+                      <li><a href="">1.时间都去哪了,还没好好...头发就白了</a></li>
+                      <li><a href="">2.时间都去哪了,还没好好...头发就白了</a></li>
+                      <li><a href="">3.时间都去哪了,还没好好...头发就白了</a></li>
+                      <li><a href="">4.时间都去哪了,还没好好...头发就白了</a></li>
+                      <li><a href="">5.时间都去哪了,还没好好...头发就白了</a></li>
+                      <li><a href="">6.时间都去哪了,还没好好...头发就白了</a></li>
+                      <li><a href="">7.时间都去哪了,还没好好...头发就白了</a></li>
+                      <li><a href="">8.时间都去哪了,还没好好...头发就白了</a></li>
+				     </ul>
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="new2">..2.</div>
+				    <div role="tabpanel" class="tab-pane" id="new3">..3.</div>
+				    <div role="tabpanel" class="tab-pane" id="new4">..4.</div>
+                </div>
+			  </div>
+			
+		</div>
+        </div>
+     </section>
      <!--/新闻区域-->
+     
+     <!--合作区域-->
+     <section id="partners">
+        <div class="container">
+           <div class="row">
+              <h3>合作伙伴</h3>
+              <ul>
+              	<li><i class="icon-uniE930"></i></li>
+              	<li><i class="icon-uniE92F"></i></li>
+              	<li><i class="icon-uniE92E"></i></li>
+              	<li><i class="icon-uniE92A"></i></li>
+              	<li><i class="icon-uniE929"></i></li>
+              	<li><i class="icon-uniE931"></i></li>
+              	<li><i class="icon-uniE92C"></i></li>
+              	<li><i class="icon-uniE92B"></i></li>
+              	<li><i class="icon-uniE92D"></i></li>              
+              </ul>
+           </div>
+        </div>
+     </section>
+     <!--/合作区域-->
+
+
+     <!--登录框-->
+
+     <!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">登录页面</h4>
+	      </div>
+	      <div class="modal-body">
+	        <form class="form-horizontal">
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+			    <div class="col-sm-10">
+			      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+			    <div class="col-sm-10">
+			      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <div class="checkbox">
+			        <label>
+			          <input type="checkbox"> Remember me
+			        </label>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" class="btn btn-default">Sign in</button>
+			    </div>
+			  </div>
+			</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	        <button type="button" class="btn btn-primary" data-dismiss="modal"><a href="#">登录</a></button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+     <!--/登录框-->
 
 
 
