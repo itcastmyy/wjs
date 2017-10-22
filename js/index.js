@@ -54,7 +54,7 @@ $(function(){
   var carousel = $('.carousel');
   var startX=null;
   var endX=null;
-  var width=30;
+  var width=10;
 
   //2.注册触摸事件
   carousel.on('touchstart', function(e){

@@ -320,7 +320,6 @@ body{
 #news .nav > li > a{
 	width:60px;
 	border-radius:50%;
-	margin-left: 10px;
 }
 
 #news .tab-content{
@@ -444,3 +443,12 @@ margin: 10px 0 11px 10px;
 	top:200px;
 }
 
+
+
+
+
+@media (max-width:640px) {
+  #partners ul li i{
+  	font-size: 28px;
+  }
+}
