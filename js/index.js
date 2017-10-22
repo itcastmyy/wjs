@@ -48,4 +48,32 @@ $(function(){
      newsTitle.text(title);
   })
 
+
+  //触屏轮播图的滑动
+  //1.获取轮播图对象
+  var carousel = $('.carousel');
+  var startX=null;
+  var endX=null;
+  var width=30;
+
+  //2.注册触摸事件
+  carousel.on('touchstart', function(e){
+     startX = e.originalEvent.touches[0].clientX 
+     
+  });
+
+   carousel.on('touchmove', function(e){
+     endX = e.originalEvent.touches[0].clientX 
+  })
+
+   carousel.on('touchend', function(e){
+     var distance = Math.abs(startX - endX);
+    
+     if(distance > width){
+     $(this).carousel(startX > endX ? 'next' : 'prev');
+      
+     } 
+
+  })
+
 }) 
